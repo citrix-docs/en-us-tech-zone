@@ -1,4 +1,4 @@
-### Contributor Guidelines
+# Contributor Guidelines
 
 Welcome to the documentation page for Citrix Tech Zone! We're delighted that you're interested in contributing to our site. If you need to reach our team, you can email us at tech-content-feedback@citrix.com (external email contact) or reach out directly to [Tarkan Kocoglu](mailto:tarkan.kocoglu@citrix.com) or [Martin Zugec](mailto:martin.zugec@citrix.com).
 
