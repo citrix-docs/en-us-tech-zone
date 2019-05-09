@@ -73,51 +73,51 @@ Scan only local drives - or disable network scanning. The assumption is that all
 
 Files:
 
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName.mdf (7.12+)`
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName.mdf (7.12+)`
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName_log.ldf (7.12+)`
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName_log.ldf (7.12+)`
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName.mdf (7.12+)
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName.mdf (7.12+)
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName_log.ldf (7.12+)
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName_log.ldf (7.12+)
 
 Folders:
 
--  `%ProgramData%\Citrix\Broker\Cache (7.6+)`
+-  %ProgramData%\Citrix\Broker\Cache (7.6+)
 
 Processes:
 
--  `%ProgramFiles%\Citrix\Broker\Service\BrokerService.exe`
--  `%ProgramFiles%\Citrix\Broker\Service\HighAvailabilityService.exe (7.12+)`
--  `%ProgramFiles%\Citrix\ConfigSync\ConfigSyncService.exe (7.12+)`
+-  %ProgramFiles%\Citrix\Broker\Service\BrokerService.exe
+-  %ProgramFiles%\Citrix\Broker\Service\HighAvailabilityService.exe (7.12+)
+-  %ProgramFiles%\Citrix\ConfigSync\ConfigSyncService.exe (7.12+)
 
 #### Virtual Delivery Agents
 
 Files:
 
--  `%UserProfile%\AppData\Local\Temp\Citrix\HDXRTConnector\*\*.txt`
+-  %UserProfile%\AppData\Local\Temp\Citrix\HDXRTConnector\*\*.txt
 
 Processes:
 
--  `%ProgramFiles%\Citrix\User Profile Manager\UserProfileManager.exe`
--  `%ProgramFiles%\Citrix\Virtual Desktop Agent\BrokerAgent.exe`
--  `%SystemRoot%\System32\spoolsv.exe`
--  `%SystemRoot%\System32\winlogon.exe`
--  `%ProgramFiles%\Citrix\ICAService\picaSvc2.exe` (Desktop OS only)
--  `%ProgramFiles%\Citrix\ICAService\CpSvc.exe` (Desktop OS only)
+-  %ProgramFiles%\Citrix\User Profile Manager\UserProfileManager.exe
+-  %ProgramFiles%\Citrix\Virtual Desktop Agent\BrokerAgent.exe
+-  %SystemRoot%\System32\spoolsv.exe
+-  %SystemRoot%\System32\winlogon.exe
+-  %ProgramFiles%\Citrix\ICAService\picaSvc2.exe (Desktop OS only)
+-  %ProgramFiles%\Citrix\ICAService\CpSvc.exe (Desktop OS only)
 
 ### Workspace app / Receiver for Windows
 
 Files:
 
--  `%UserProfile%\AppData\Local\Temp\Citrix\RTMediaEngineSRV\MediaEngineSRVDebugLogs\*\*.txt`
+-  %UserProfile%\AppData\Local\Temp\Citrix\RTMediaEngineSRV\MediaEngineSRVDebugLogs\*\*.txt
 
 Processes:
 
--  `%ProgramFiles(x86)%\Citrix\ICA Client\MediaEngineService.exe`
--  `%ProgramFiles(x86)%\Citrix\ICA Client\CDViewer.exe`
--  `%ProgramFiles(x86)%\Citrix\ICA Client\concentr.exe`
--  `%ProgramFiles(x86)%\Citrix\ICA Client\wfica32.exe`
--  `%ProgramFiles(x86)%\Citrix\ICA Client\AuthManager\AuthManSvr.exe`
--  `%ProgramFiles(x86)%\Citrix\ICA Client\SelfServicePlugin\SelfService.exe`
--  `%ProgramFiles(x86)%\Citrix\ICA Client\SelfServicePlugin\SelfServicePlugin.exe`
+-  %ProgramFiles(x86)%\Citrix\ICA Client\MediaEngineService.exe
+-  %ProgramFiles(x86)%\Citrix\ICA Client\CDViewer.exe
+-  %ProgramFiles(x86)%\Citrix\ICA Client\concentr.exe
+-  %ProgramFiles(x86)%\Citrix\ICA Client\wfica32.exe
+-  %ProgramFiles(x86)%\Citrix\ICA Client\AuthManager\AuthManSvr.exe
+-  %ProgramFiles(x86)%\Citrix\ICA Client\SelfServicePlugin\SelfService.exe
+-  %ProgramFiles(x86)%\Citrix\ICA Client\SelfServicePlugin\SelfServicePlugin.exe
 
 Please note that these exclusions for Receiver typically are not needed. We have only seen a need for these in environments when the antivirus is configured with policies that are more strict than usual, or in situations in which multiple security agents are in use simultaneously (AV, DLP, HIP, etc.)
 
@@ -127,79 +127,79 @@ Please note that these exclusions for Receiver typically are not needed. We have
 
 Files:
 
--  `*.vhd`
--  `*.avhd`
--  `*.vhdx`
--  `*.avhdx`
--  `*.pvp`
--  `*.lok`
--  `%SystemRoot%\System32\drivers\CvhdBusP6.sys` (Windows Server 2008 R2)
--  `%SystemRoot%\System32\drivers\CVhdMp.sys` (Windows Server 2012 R2)
--  `%SystemRoot%\System32\drivers\CfsDep2.sys`
--  `%ProgramData%\Citrix\Provisioning Services\Tftpboot\ARDBP32.BIN`
-
+-  *.vhd
+-  *.avhd
+-  *.vhdx
+-  *.avhdx
+-  *.pvp
+-  *.lok
+-  %SystemRoot%\System32\drivers\CvhdBusP6.sys (Windows Server 2008 R2)
+-  %SystemRoot%\System32\drivers\CVhdMp.sys (Windows Server 2012 R2)
+-  %SystemRoot%\System32\drivers\CfsDep2.sys
+-  %ProgramData%\Citrix\Provisioning Services\Tftpboot\ARDBP32.BIN
+  
 Processes:
 
--  `%ProgramFiles%\Citrix\Provisioning Services\BNTFTP.EXE`
--  `%ProgramFiles%\Citrix\Provisioning Services\PVSTSB.EXE`
--  `%ProgramFiles%\Citrix\Provisioning Services\StreamService.exe`
--  `%ProgramFiles%\Citrix\Provisioning Services\StreamProcess.exe`
--  `%ProgramFiles%\Citrix\Provisioning Services\soapserver.exe`
--  `%ProgramFiles%\Citrix\Provisioning Services\Inventory.exe`
--  `%ProgramFiles%\Citrix\Provisioning Services\Notifier.exe`
--  `%ProgramFiles%\Citrix\Provisioning Services\MgmntDaemon.exe`
--  `%ProgramFiles%\Citrix\Provisioning Services\BNPXE.exe` (only if PXE is used)
+-  %ProgramFiles%\Citrix\Provisioning Services\BNTFTP.EXE
+-  %ProgramFiles%\Citrix\Provisioning Services\PVSTSB.EXE
+-  %ProgramFiles%\Citrix\Provisioning Services\StreamService.exe
+-  %ProgramFiles%\Citrix\Provisioning Services\StreamProcess.exe
+-  %ProgramFiles%\Citrix\Provisioning Services\soapserver.exe
+-  %ProgramFiles%\Citrix\Provisioning Services\Inventory.exe
+-  %ProgramFiles%\Citrix\Provisioning Services\Notifier.exe
+-  %ProgramFiles%\Citrix\Provisioning Services\MgmntDaemon.exe
+-  %ProgramFiles%\Citrix\Provisioning Services\BNPXE.exe (only if PXE is used)
 
 #### Provisioning Target Device
 
 Files:
 
--  `.vdiskcache`
--  `vdiskdif.vhdx` (7.x and above when using RAM cache with overflow)
--  `%SystemRoot%\System32\drivers\bnistack6.sys`
--  `%SystemRoot%\System32\drivers\CfsDep2.sys`
--  `%SystemRoot%\System32\drivers\CVhdBusP6.sys`
--  `%SystemRoot%\System32\drivers\cnicteam.sys`
--  `%SystemRoot%\System32\drivers\CVhdMp.sys` (7.x only)
+-  .vdiskcache
+-  vdiskdif.vhdx (7.x and above when using RAM cache with overflow)
+-  %SystemRoot%\System32\drivers\bnistack6.sys
+-  %SystemRoot%\System32\drivers\CfsDep2.sys
+-  %SystemRoot%\System32\drivers\CVhdBusP6.sys
+-  %SystemRoot%\System32\drivers\cnicteam.sys
+-  %SystemRoot%\System32\drivers\CVhdMp.sys (7.x only)
 
 ### StoreFront
 
 Files:
 
--  `%SystemRoot%\ServiceProfiles\NetworkService\AppData\Roaming\Citrix\SubscriptionsStore\**\PersistentDictionary.edb`
+-  %SystemRoot%\ServiceProfiles\NetworkService\AppData\Roaming\Citrix\SubscriptionsStore\**\PersistentDictionary.edb
 
 Processes:
 
--  `%ProgramFiles%\Citrix\Receiver StoreFront\Services\SubscriptionsStoreService\Citrix.DeliveryServices.SubscriptionsStore.ServiceHost.exe`
--  `%ProgramFiles%\Citrix\Receiver StoreFront\Services\CredentialWallet\Citrix.DeliveryServices.CredentialWallet.ServiceHost.exe`
+-  %ProgramFiles%\Citrix\Receiver StoreFront\Services\SubscriptionsStoreService\Citrix.DeliveryServices.SubscriptionsStore.ServiceHost.exe
+-  %ProgramFiles%\Citrix\Receiver StoreFront\Services\CredentialWallet\Citrix.DeliveryServices.CredentialWallet.ServiceHost.exe
 
 ### Cloud Connector
 
 Files:
 
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName.mdf`
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName.mdf`
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName_log.ldf`
--  `%SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName_log.ldf`
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName.mdf
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName.mdf
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaDatabaseName_log.ldf
+-  %SystemRoot%\ServiceProfiles\NetworkService\HaImportDatabaseName_log.ldf
 
 Folders:
 
--  `%SystemDrive%\Logs\CDF`
--  `%ProgramData%\Citrix\WorkspaceCloud\Logs`
+-  %SystemDrive%\Logs\CDF
+-  %ProgramData%\Citrix\WorkspaceCloud\Logs
 
 Processes:
 
--  `%ProgramFiles%\Citrix\XaXdCloudProxy\XaXdCloudProxy.exe`
--  `%ProgramFiles%\Citrix\Broker\Service\HighAvailabilityService.exe`
--  `%ProgramFiles%\Citrix\ConfigSync\ConfigSyncService.exe`
+-  %ProgramFiles%\Citrix\XaXdCloudProxy\XaXdCloudProxy.exe
+-  %ProgramFiles%\Citrix\Broker\Service\HighAvailabilityService.exe
+-  %ProgramFiles%\Citrix\ConfigSync\ConfigSyncService.exe
 
 ### Workspace Environment Management
 
 Processes:
 
--  `Norskale Broker Service.exe`
--  `Norskale Broker Service Configuration Utility.exe`
--  `Norskale Database Management Utility.exe`
+-  Norskale Broker Service.exe
+-  Norskale Broker Service Configuration Utility.exe
+-  Norskale Database Management Utility.exe
 
 ## References
 

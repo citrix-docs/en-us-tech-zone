@@ -342,13 +342,13 @@ The Citrix Gateway Service offers authentication, single sign-on, and enables fa
 
 **Name the application:** “Citrix Files”
 
-**Enter the URL:** `<https://xxxxx.sharefile.com/>`
+**Enter the URL:** <https://xxxxx.sharefile.com/>
 
 Similarly, on the SSO page ensuring SAML is selected, assuming SAML/SSO setting for Citrix Files has already been completed for the backend.
 
-**The Assertion URL is:** `<https://xxxxx.sharefile.com/saml/xxxx>`
+**The Assertion URL is:** <https://xxxxx.sharefile.com/saml/xxxx>
 
-**Audience:** `<https://xxxxx.sharefile.com>`
+**Audience:** <https://xxxxx.sharefile.com>
 
 **Name ID format:** Email address
 

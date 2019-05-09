@@ -54,7 +54,7 @@ All of the control plane components - StoreFront, Delivery Controllers, even the
 
 The Cloud Connector is a new component that is installed in the resource location to connect the resources up to Citrix Cloud. It is placed next to the VDAs, within the hypervisor(s) or public cloud(s), and the Active Directory environment. Citrix Cloud connectors are designed for seamless integration and to deliver the best user experience on any device, under any network condition.
 
-Citrix Workspace Experience, an enhanced version and successor of StoreFront in Citrix Cloud, is the industry’s-first solution offering the integration of Windows, Linux, Web, SaaS and mobile applications in a unified and simple-to-use interface. Citrix Workspace fully aggregates apps and data from both on-premises and cloud environments to deliver the required resources with the right experience to the right user at the right time. With this enhanced architecture, customers still own and maintain complete control over provisioned resources like desktops, applications, policies, and users using the Citrix Cloud Portal.
+Citrix Workspace Experience, an enhanced version and successor of Storefront in Citrix Cloud, is the industry’s-first solution offering the integration of Windows, Linux, Web, SaaS and mobile applications in a unified and simple-to-use interface. Citrix Workspace fully aggregates apps and data from both on-premises and cloud environments to deliver the required resources with the right experience to the right user at the right time. With this enhanced architecture, customers still own and maintain complete control over provisioned resources like desktops, applications, policies, and users using the Citrix Cloud Portal.
 
 ## Generic & Conceptual Architecture
 
@@ -553,7 +553,7 @@ The Citrix Cloud Virtual Apps and Desktops Service(CVADS) can be deployed in sev
 
 *  **CVADS with Hybrid-Cloud/On-Premises Citrix workloads**
 *  **CVADS and Gateway Service with On-Premises Citrix workloads**
-*  **CVADS with On-Premises Gateway, StoreFront and Citrix workloads**
+*  **CVADS with On-Premises Gateway, Storefront and Citrix workloads**
 
 ## CVADS with Hybrid-Cloud/On-Premises Citrix Workloads
 
@@ -580,7 +580,7 @@ Upon user segregation, the Citrix admin has created the respective machine catal
 
 **Access Layer:** Citrix StoreFront / Workspace Service is the frontend or entry point for Citrix users to access the Citrix environment. Citrix Cloud has provisioned StoreFront / Workspace to access the company’s Citrix environment and users are provided with the Workspace URL (`https://company.cloud.com`) from Citrix Cloud. The Workspace configuration tab allowed company admins to change the Workspace URL and the customization of Workspace / StoreFront Page.
 
-Installation of the Cloud Connector enables extending the customer Active Directory domain to Citrix Cloud for authentication. Authentication configuration in Workspace Configuration allows the admin to select the authentication source for users to sign-in and access the Citrix resources. The admin has selected on-premises Active directory to authenticate the Citrix subscribers on Citrix Cloud. Users accessing the Citrix Cloud URL `https://company.cloud.com` are asked to enter the domain credentials which will then be validated against their on-premises Active Directory domain via Cloud Connector.
+Installation of the Cloud Connector enables extending the customer Active Directory domain to Citrix Cloud for authentication. Authentication configuration in Workspace Configuration allows the admin to select the authentication source for users to sign-in and access the Citrix resources. The admin has selected on-premises Active directory to authenticate the Citrix subscribers on Citrix Cloud. Users accessing the Citrix Cloud URL `https://company.cloud.com`  are asked to enter the domain credentials which will then be validated against their on-premises Active Directory domain via Cloud Connector.
 
 Once the credential is validated, users are then presented with the workspace page where they can access the apps, desktops and content which are assigned. When the user launches an application or desktop, the user is presented with an ICA file which will launch the Workspace App and the ICA connection (TCP port 1494/2598) is established from the user system to the VDA which is assigned by the controller for this connection.
 
@@ -650,7 +650,7 @@ Citrix Cloud has provisioned StoreFront / Workspace to access the Company’s Ci
 
 Installation of Cloud Connector enables the extension of the customer’s Active Directory domain to Citrix Cloud for authentication. The authentication configuration in Workspace Configuration allows the admin to select the authentication source for users to sign-in and access the Citrix resources. The admin has selected on-premises Active Directory to authenticate the Citrix subscribers on Citrix Cloud.
 
-User accessing the Citrix Cloud URL `https://customer.cloud.com` is asked to enter the domain credentials which will then be validated against their on-premises Active Directory via Cloud Connector. Once validated, the user is then presented with the workspace page where they can access the apps and desktops which are assigned.
+User accessing the Citrix Cloud URL `https://customer.cloud.com`  is asked to enter the domain credentials which will then be validated against their on-premises Active Directory via Cloud Connector. Once validated, the user is then presented with the workspace page where they can access the apps and desktops which are assigned.
 
 When the user launches an application or desktop, the user is presented with an ICA file which will be launched via the Workspace App and the ICA connection (SSL) is established from user system to Citrix Gateway and then the connection is passed to Cloud connector and then (on port 1494/2598) to the VDA which is assigned by the controller for this connection. On successful connection, HDX session (2598) is launched and presented to the user.
 
@@ -660,7 +660,7 @@ When the user launches an application or desktop, the user is presented with an 
 
 To aggregate the resources from legacy Citrix environments, the admin has installed two Cloud Connectors within the legacy environment and that allows the Cloud admin to configure the site aggregation on Citrix Cloud workspace configuration. The admin has provided the legacy environment details in the Sites tab on Workspace configuration and enabled the Service Integrations – Virtual Apps and Desktops on-oremises sites allowed to aggregate the Citrix resources from the legacy Citrix environment via Citrix Cloud.
 
-The user accessing the Citrix Cloud URL `https://customer.cloud.com` asked to enter the domain credentials which are validated against their on-premises Active Directory via Cloud Connector. Once validated, the user is then presented with the workspace page with the apps and desktops from both old and new environments.
+The user accessing the Citrix Cloud URL `https://customer.cloud.com`  asked to enter the domain credentials which are validated against their on-premises Active Directory via Cloud Connector. Once validated, the user is then presented with the workspace page with the apps and desktops from both old and new environments.
 
 When a user launches an application from the legacy environment, the user is presented with an ICA file which will then be launched via Workspace App. Workspace App initiates the ICA connection from the user system to Citrix Gateway and then to Cloud connector and then to the VDA assigned for this connection. On successful connection, the HDX session is launched and presented to the user.
 
@@ -775,7 +775,7 @@ To achieve the multi-factor authentication requirement for Citrix environment ac
 
 The Citrix admin has deployed two StoreFront servers to integrate with Citrix Gateway ADC’s in each datacenter. They created a store named “VAD” in StoreFront to configure the additional settings which enables the admin to configure the authentication settings and delivery controller for resource enumeration. The admin has added two cloud connectors as delivery controller for each site in the store configuration.
 
-The user accessing the Citrix URL `https://amrapps.company.com` is asked to enter the domain credentials which will then be validated against their NPS-MFA Servers. Once validated, the user is then asked to enter the second factor which is as per configuration on MFA for each user.
+The user accessing the Citrix URL `https://amrapps.company.com`  is asked to enter the domain credentials which will then be validated against their NPS-MFA Servers. Once validated, the user is then asked to enter the second factor which is as per configuration on MFA for each user.
 
 Once the authentication is successful, the on-premises StoreFront communicates with the Citrix Cloud Connector for resource enumeration. The Cloud connector will communicate with cloud-hosted Delivery Controllers and then enumerate the resources. Once the enumeration is completed, the user is presented with the StoreFront page where can they can access the apps and desktops which are assigned.
 

@@ -339,7 +339,7 @@ Azure Disks are designed to deliver enterprise-grade durability. Three performan
 
 Managed Disks are recommended over unmanaged disk by Microsoft. Unmanaged disks should be considered by exception only. Standard Storage (HDD and SSD) include transaction costs (storage I/O) that must be considered but have lower costs per disk. Premium Storage has no transaction costs but have higher per disk costs and offers an improved user experience.
 
-The disks offer no SLA unless an Availability Set is used. Availability Sets are not supported with Citrix MCS but should be included with Citrix Cloud Connector, NetScaler, and StoreFront.
+The disks offer no SLA unless an Availability Set is used. Availability Sets are not supported with Citrix MCS but should be included with Citrix Cloud Connector, NetScaler, and Storefront.
 
 ### Microsoft Operations Management Suite (OMS)
 

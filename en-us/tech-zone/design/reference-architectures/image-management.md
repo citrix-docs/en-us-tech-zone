@@ -22,12 +22,12 @@ Virtualization solutions from Citrix enables organizations to create, control an
 
 The Citrix architectural design framework is based on a unified and standardized layer model. The framework provides a foundation to understand the technical architecture for most of the common Virtual Apps and Desktops deployment scenarios. These layers are depicted in the conceptual diagram.
 
-*  ***User Layer*** - This layer defines user groups and locations of the Citrix environment.
-*  ***Access layer*** - This layer defines how users access the resources.
-*  ***Resource layer*** - This layer defines provisioning of Citrix workloads and how resources are assigned to the given users.
-*  ***Control layer*** - This layer defines the components that controls the Citrix solution.
-*  ***Platform layer*** - This layer defines the physical elements where the hypervisor components and cloud service provider framework run to host the Citrix workloads.
-*  ***Operations Layer*** - This layer defines the tools that support the delivery of the core solutions.
+*  ***User Layer***  - This layer defines user groups and locations of the Citrix environment.
+*  ***Access layer***  - This layer defines how users access the resources.
+*  ***Resource layer***  - This layer defines provisioning of Citrix workloads and how resources are assigned to the given users.
+*  ***Control layer***  - This layer defines the components that controls the Citrix solution.
+*  ***Platform layer***  - This layer defines the physical elements where the hypervisor components and cloud service provider framework run to host the Citrix workloads.
+*  ***Operations Layer***  - This layer defines the tools that support the delivery of the core solutions.
 
 [![IM-Image-1](/en-us/tech-zone/design/media/reference-architectures_image-management_001.png)](/en-us/tech-zone/design/media/reference-architectures_image-management_001.png)
 
@@ -102,11 +102,11 @@ Citrix MCS supports both server and desktops OS environment.
 
 For desktop OS environments, Citrix administrators can create three types of virtual desktops using Citrix Machine Creation Services
 
-*  **Pooled-random desktops** are non-persistent virtual desktops assigned to users randomly every time they start a VDI session. These desktops erase any user-specific changes each time they reboot. With the Citrix Profile Management solution, the user specific data and settings can be stored on centralized file servers.
+*  **Pooled-random desktops**  are non-persistent virtual desktops assigned to users randomly every time they start a VDI session. These desktops erase any user-specific changes each time they reboot. With the Citrix Profile Management solution, the user specific data and settings can be stored on centralized file servers.
 
-*  **Pooled-static desktops** are assigned to a specific user and only the assigned user will be able to use that desktop unless changed by an IT admin. The user's personal data and settings do not carry over from session to session. With the Citrix Profile Management solution, the user specific data and settings are stored on centralized file servers.
+*  **Pooled-static desktops**  are assigned to a specific user and only the assigned user will be able to use that desktop unless changed by an IT admin. The user's personal data and settings do not carry over from session to session. With the Citrix Profile Management solution, the user specific data and settings are stored on centralized file servers.
 
-*  **Dedicated desktops** are assigned to individual users and the data and settings will persist on the desktops. Optionally, the Citrix Profile Management solution can be used to store the user profile and data on central file servers. For dedicated desktops there is a new option available under Desktop OS Catalogs virtual machine copy mode, "Use full copy for better data recovery and migration support, with potentially reduced IOPS after the machines are created".
+*  **Dedicated desktops**  are assigned to individual users and the data and settings will persist on the desktops. Optionally, the Citrix Profile Management solution can be used to store the user profile and data on central file servers. For dedicated desktops there is a new option available under Desktop OS Catalogs virtual machine copy mode, “Use full copy for better data recovery and migration support, with potentially reduced IOPS after the machines are created”.
 
 For the Server OS environment, Citrix administrators can deploy multiple hosted shared virtual machines for a Virtual Apps environment using the master VM image (base disk).
 
@@ -191,11 +191,11 @@ Below is the pictorial flow diagram and workflow depicting how Citrix Machine Cr
 
 Citrix Machine Creation Services leverages hypervisor APIs to provision virtual machines. Each virtual machine is assigned an identity disk that gives the machine a unique identity and a differencing disk that handles the writes for the virtual machine.
 
-***Instruction Disk:*** This small instruction disk contains the steps of the image preparation to run and is attached to that VM. The preparation virtual machine is then started, the image preparation process begins and the virtual machine is shutdown.
+***Instruction Disk:***  This small instruction disk contains the steps of the image preparation to run and is attached to that VM. The preparation virtual machine is then started, the image preparation process begins and the virtual machine is shutdown.
 
-***Identity Disk:*** A unique Identity Disk used to provide each virtual machine with a unique identity. The functionality within the Delivery Controller creates the identity Disks. This disk will be 16MB in size.
+***Identity Disk:***  A unique Identity Disk used to provide each virtual machine with a unique identity. The functionality within the Delivery Controller creates the identity Disks. This disk will be 16MB in size.
 
-***Differencing Disk:*** A unique Difference Disk is used to store any writes made to the VM. The disk is thin provisioned and will increase to the maximum size of the base VM as required.
+***Differencing Disk:***  A unique Difference Disk is used to store any writes made to the VM. The disk is thin provisioned and will increase to the maximum size of the base VM as required.
 
 #### Cache for Temporary Data
 
@@ -418,15 +418,15 @@ The key to establishing a highly available Citrix Provisioning environment is to
 
 Citrix Provisioning provides several options to consider when configuring for a highly available implementation, including:
 
-***Offline Database Support*** - This allows Provisioning Servers to use a local snapshot of the database if the connection to the database is lost to allow continued functionality.
+***Offline Database Support***  - This allows Provisioning Servers to use a local snapshot of the database if the connection to the database is lost to allow continued functionality.
 
-***SQL AlwaysOn*** - Citrix Provisioning supports the SQL AlwaysOn high availability and disaster recovery solution.
+***SQL AlwaysOn***  - Citrix Provisioning supports the SQL AlwaysOn high availability and disaster recovery solution.
 
-***Database mirroring*** - A high availability solution for SQL Server implemented at the database level.
+***Database mirroring***  - A high availability solution for SQL Server implemented at the database level.
 
-***Provisioning Server Failover*** - If one of the PVS servers becomes unavailable, another server within the site can handle the active target device connections with the vDisk. Load balancing is enabled so the load is automatically balanced between the target devices and the remaining servers.
+***Provisioning Server Failover***  - If one of the PVS servers becomes unavailable, another server within the site can handle the active target device connections with the vDisk. Load balancing is enabled so the load is automatically balanced between the target devices and the remaining servers.
 
-***vDisks and Storage*** - Provisioning Servers are configured to access a shared storage location. Citrix Provisioning supports various shared storage configurations including Windows shared storage and SANs.
+***vDisks and Storage***  - Provisioning Servers are configured to access a shared storage location. Citrix Provisioning supports various shared storage configurations including Windows shared storage and SANs.
 
 Reference: [Citrix Docs: Managing for highly available implementations](/en-us/provisioning/current-release/advanced-concepts/managing-high-availability.html)
 

@@ -256,7 +256,7 @@ To achieve the customer’s actual requirement of prioritizing the HDX access fr
 
 ## Branch-2 Configuration
 
-The SD-WAN appliance at the Branch-2 is deployed sitting on both MPLS and Internet circuits, it is deployed in what is referred to as an inline mode with high availability – this means the existing routing devices/firewalls remain in situ.
+The SD-WAN appliance at the Branch-2 is deployed sitting on both MPLS and Internet circuits, it is deployed in what is referred to as an inline mode with high availability – this means the existing routing devices/firewalls remain insitu.
 
 The customer has installed 210 LTE appliances which introduced 4G / LTE internet link to provide a back-up for the existing internet link of this branch. Using the Deep Packet Inspection feature, the business applications and SaaS applications that require internet access have to be broken out at the branch locally and traffic must be routed via the dedicated internet link or 4G/LTE link. All the social media access needs to be broken out at the branch and routed via the internet link.
 
