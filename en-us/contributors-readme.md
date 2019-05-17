@@ -7,6 +7,16 @@ Before you start, we'd like to share the playbook and the rules for contribution
 Our site supports multi-channel output, including HTML, PDF, and screen readers, not to mention that the site design is responsive. Therefore, we've tuned the markdown requirements to ensure integrity of the output no matter which output type we're looking at. We've also locked down the markdown spec to ensure build integrity, dependability, and continuous deployment.
 
 Besides the output considerations, we aim for readability. Keep your writing at a 9th or 10th grade (U.S.) reading level. The equivalent of a Flesch reading ease score of 60 or higher. This helps our fluent English-language readers to get what they need fast, without having to study. And it alleviates pain for our audience members who don't read English well, or who prefer another language.
+#adding extra
+
+adding extra 
+
+
+line breaks
+
+
+because I don't like the CSS
+
 
 ## Authoring Content
 
