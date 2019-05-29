@@ -91,8 +91,7 @@ Following tips are useful for operators, but are not important for authors / con
 
 When we get your pull request, it's a quick process on our side to stage and publish your changes:
 
-1 Review the diff between the pull request and the production branch of the repository.
-2 Run Acrolinx on the submitted content to ensure compliance with corporate terminology, style, and voice guidelines.
-3 Iterate with the submitter (if needed) to review changes required by edit.
-4 Merge to `wip` branch. The `wip` (work in progress) branch is our staging branch. Anything merged to `wip` is automatically published to our [staging environment](https://stage-docs.citrix.com/en-us).
-5 Merge to `master` branch. The `master` branch is our production branch. Anything merged to `master` is automatically published to our production site, (docs.citrix.com).
+1. Review the diff between the pull request and the production branch of the repository.
+1. Run Acrolinx on the submitted content to ensure compliance with corporate terminology, style, and voice guidelines.
+1. Iterate with the submitter (if needed) to review changes required by edit.
+1. Merge to `master` branch. The `master` branch is our production branch. Anything merged to `master` is automatically published to our production site, (docs.citrix.com).
