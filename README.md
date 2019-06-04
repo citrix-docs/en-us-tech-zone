@@ -94,4 +94,4 @@ When we get your pull request, it's a quick process on our side to stage and pub
 1. Review the diff between the pull request and the production branch of the repository.
 1. Run Acrolinx on the submitted content to ensure compliance with corporate terminology, style, and voice guidelines.
 1. Iterate with the submitter (if needed) to review changes required by edit.
-1. Merge to `master` branch. The `master` branch is our production branch. Anything merged to `master` is automatically published to our production site, (docs.citrix.com).
+1. Merge to `master` branch. The `master` branch is our production branch. Anything merged to `master` is automatically published to our production site, (docs.citrix.com). 
