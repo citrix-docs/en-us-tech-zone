@@ -31,7 +31,7 @@ Just as buildings have blueprints that include details about their structure and
 
 ## Security
 
-[Citrix Analytics](/en-us/tech-zone/design/reference-architectures/cas.html) - Citrix Analytics - COMING OUT SOON!
+[Citrix Analytics](/en-us/tech-zone/design/reference-architectures/cas.html) - COMING OUT SOON!
 
 
 ## 3rd Party Content
