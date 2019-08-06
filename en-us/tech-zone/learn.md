@@ -1,7 +1,7 @@
 ---
 layout: doc
 ---
-# Citrix Tech Zone - Learn
+# Citrix TechZone - Learn
 
 The Learn “Zone” provides technical insights into very specific Citrix solutions or use cases to deepen your knowledge around it.
 
