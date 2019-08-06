@@ -29,6 +29,11 @@ Just as buildings have blueprints that include details about their structure and
 
 [SD-WAN](/en-us/tech-zone/design/reference-architectures/sdwan.html) - Learn about the framework, design, and architecture for Citrix SD-WAN with SD-WAN Orchestrator for single region deployment.
 
+## Security
+
+[Citrix Analytics](/en-us/tech-zone/design/reference-architectures/cas.html) - Citrix Analytics - COMING OUT SOON!
+
+
 ## 3rd Party Content
 
 [3rd Party Reference Architectures](/en-us/tech-zone/design/reference-architectures/3rd-party.html) - View reference architectures created by our industry partners on joint technical solutions.
